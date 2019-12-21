@@ -30,5 +30,21 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'CustomNode',
+        imagePath: 'url1',
+        name: 'img1',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'CustomNode',
+        imagePath: 'url2',
+        name: 'img2',
+      },
+    },
   ],
 }
